@@ -8,6 +8,6 @@ scikit-learn
 seaborn
 streamlit
 gTTS==2.5.1
-
+fpdf
 google-generativeai
 
