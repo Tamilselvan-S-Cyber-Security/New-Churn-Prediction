@@ -870,13 +870,13 @@ else:
 
     # Analysis with AI Page
     elif page == "Analysis with AI":
-        st.header("Analysis with Ollama AI")
+        st.header("Analysis with Wolf AI")
         
         if st.session_state.data is None:
             st.warning("Please upload data first.")
         else:
             st.write("""
-            This section uses the Ollama API with the qwen2.5-coder:7b model to analyze your customer data 
+            This section uses the Wolf API with the Wolf:7b model to analyze your customer data 
             and provide insights on churn patterns. You can ask specific questions about your data or 
             get general recommendations to reduce churn.
             """)
@@ -899,8 +899,8 @@ else:
                                          value=selected_question if selected_question else "",
                                          height=100)
             
-            if st.button("Analyze with Ollama") and custom_question:
-                with st.spinner("Analyzing with Ollama qwen2.5-coder:7b..."):
+            if st.button("Analyze with Wolf AI") and custom_question:
+                with st.spinner("Analyzing with Wolf Wolf:7b..."):
                     # Get data summary for context
                     data_sample = st.session_state.data.head(10)
                     data_info = {
