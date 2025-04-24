@@ -1,4 +1,7 @@
 [server]
 headless = true
-address = "127.0.0.1"
-port = 7040
+address = "0.0.0.0"
+port = 8401
+enableCORS = false
+enableXsrfProtection = false
+
